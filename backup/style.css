@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    color: orange;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 15px;
+}
+
+.hero h2 {
+    font-size: 22px;
+}
+
+.hero p {
+    font-size: 14px;
+}
+
+/* SERVICES */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* PORTFOLIO */
+.portfolio {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 60px;
+    background: #111;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    color: white;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 18px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+}
+
+.project-card {
+    width: 300px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-card h3 {
+    margin: 10px;
+}
+
+.project-card p {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* MOBILE HEADER FIX */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header nav {
+        margin-top: 10px;
+    }
+
+    .header nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+section {
+    padding: 40px 15px;
+}
+
+/*  Button */
+
+.btn {
+    background: orange;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+}
