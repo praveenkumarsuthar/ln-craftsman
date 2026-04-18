@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - LN Craftsman</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="protected">
+
+<div class="admin-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>Admin</h2>
+        <nav>
+            <a href="admin.html">Projects</a>
+            <a href="admin-contacts.html">Contacts</a>
+        </nav>
+        <button onclick="logout()" class="btn" style="margin-top:20px;">Logout</button>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <h2>Dashboard – Projects</h2>
+
+        <!-- UPLOAD FORM -->
+        <section class="card-section">
+            <form id="uploadForm">
+                <input type="text" id="title" placeholder="Project Title" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="file" id="image" required>
+                <button type="submit" class="btn">Upload Project</button>
+            </form>
+        </section>
+
+        <!-- PROJECT LIST -->
+        <section class="card-section">
+            <h3>All Projects</h3>
+            <div class="gallery"></div>
+        </section>
+
+    </main>
+
+</div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
